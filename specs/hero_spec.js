@@ -24,4 +24,20 @@ describe("Hero Tests", function(){
   it("should be able to say his name", function(){
     assert.strictEqual(hero.talk(), "My name is Sarazor")
   })
+
+  it("shouldn't have task at the beginning", function(){
+    assert.deepEqual(hero.getTasks(), []);
+  })
+
+
+
+
+
+
+
+
+
+
+
+
 })
