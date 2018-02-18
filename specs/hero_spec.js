@@ -11,14 +11,17 @@ describe("Hero Tests", function(){
 
   it("should have a name", function(){
     assert.strictEqual(hero.name, "Sarazor");
-})
+  })
 
   it("should have a health", function(){
     assert.strictEqual(hero.health, 100);
   })
 
-  it("should ahave a favourite food", function(){
+  it("should have a favourite food", function(){
     assert.strictEqual(hero.favouriteFood, "Chicken");
   })
 
+  xit("should be able to say his name", function(){
+    assert.strictEqual(hero.talk, "My name is Sarazor")
+  })
 })
