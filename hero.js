@@ -5,10 +5,11 @@ const Hero = function(name, health, favouriteFood) {
 }
 
 
-// 
-// Hero.prototype.talk = function () {
-//   "My name is " + name
-// };
+
+Hero.prototype.talk = function () {
+  return `My name is ${this.name}`;
+}
+
 
 
 module.exports = Hero;
