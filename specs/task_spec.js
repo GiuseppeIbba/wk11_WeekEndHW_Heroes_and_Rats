@@ -13,4 +13,8 @@ describe("Task Tests", function(){
     assert.strictEqual(task.description, "Something");
   })
 
+  it("should have a difficulty level", function(){
+    assert.strictEqual(task.difficultyLevel, "easy")
+  })
+
 })
