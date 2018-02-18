@@ -5,13 +5,17 @@ describe("Hero Tests", function(){
 
   let hero;
 
-  // beforeEach("Setup", function(){
-  //   hero = new Hero("Sarazor");
-  // })
+  beforeEach("Setup", function(){
+    hero = new Hero("Sarazor", 100, "Chicken");
+  })
 
   it("should have a name", function(){
-    hero = new Hero("Sarazor");
     assert.strictEqual(hero.name, "Sarazor");
 })
+
+  it("should have a health", function(){
+    assert.strictEqual(hero.health, 100);
+  })
+
 
 })
