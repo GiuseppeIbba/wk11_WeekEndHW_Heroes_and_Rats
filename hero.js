@@ -16,6 +16,9 @@ Hero.prototype.getTasks = function(){
 };
 
 Hero.prototype.eat = function (food) {
+  if(food.name === this.favouriteFood){
+    food.replenishmentValue *= 1.5;
+  }
   return this.health += food.replenishmentValue;
 };
 

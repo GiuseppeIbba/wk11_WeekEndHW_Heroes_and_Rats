@@ -6,11 +6,12 @@ describe("Hero Tests", function(){
 
   let hero;
   let food1;
+  let food2;
 
   beforeEach("Setup", function(){
     hero = new Hero("Sarazor", 100, "Chicken");
-    food1 = new Food("Ribs", 30);
-
+    food1 = new Food("Ribs", 15);
+    food2 = new Food("Chicken", 30);
   })
 
   it("should have a name", function(){
@@ -35,8 +36,14 @@ describe("Hero Tests", function(){
 
   it("should be able to eat food and raise health", function(){
     hero.eat(food1)
-    assert.deepEqual(hero.health, 130 )
+    assert.deepEqual(hero.health, 115 )
   })
+
+  it("should be able to eat favourite food and raise health by 1.5 food value", function(){
+    hero.eat(food2)
+    assert.deepEqual(hero.health, 145 )
+  })
+
 
 
 
