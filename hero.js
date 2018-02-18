@@ -15,6 +15,10 @@ Hero.prototype.getTasks = function(){
   return this.tasks;
 };
 
+Hero.prototype.eat = function (food) {
+  return this.health += food.replenishmentValue;
+};
+
 
 
 module.exports = Hero;

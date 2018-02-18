@@ -1,12 +1,16 @@
 var assert = require("assert");
 var Hero = require("../hero.js");
+var Food = require("../food.js");
 
 describe("Hero Tests", function(){
 
   let hero;
+  let food1;
 
   beforeEach("Setup", function(){
     hero = new Hero("Sarazor", 100, "Chicken");
+    food1 = new Food("Ribs", 30);
+
   })
 
   it("should have a name", function(){
@@ -27,6 +31,11 @@ describe("Hero Tests", function(){
 
   it("shouldn't have task at the beginning", function(){
     assert.deepEqual(hero.getTasks(), []);
+  })
+
+  it("should be able to eat food and raise health", function(){
+    hero.eat(food1)
+    assert.deepEqual(hero.health, 130 )
   })
 
 
