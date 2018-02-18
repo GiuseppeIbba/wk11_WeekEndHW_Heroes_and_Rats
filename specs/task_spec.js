@@ -14,10 +14,14 @@ describe("Task Tests", function(){
   })
 
   it("should have a difficulty level", function(){
-    assert.strictEqual(task.difficultyLevel, "easy")
+    assert.strictEqual(task.difficultyLevel, "easy");
   })
 
   it("should have an urgency level", function(){
-    assert.strictEqual(task.urgencyLevel, )
+    assert.strictEqual(task.urgencyLevel, 3);
+  })
+
+  it("should have a reward", function(){
+    assert.strictEqual(task.reward, 100);
   })
 })
