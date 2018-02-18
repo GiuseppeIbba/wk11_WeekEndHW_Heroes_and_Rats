@@ -24,4 +24,7 @@ describe("Task Tests", function(){
   it("should have a reward", function(){
     assert.strictEqual(task.reward, 100);
   })
+  it("should be able to be completed", function(){
+    assert.strictEqual(task.completed, false);
+  })
 })
