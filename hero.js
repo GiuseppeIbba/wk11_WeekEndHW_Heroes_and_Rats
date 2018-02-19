@@ -49,6 +49,14 @@ Hero.prototype.orderByReward = function () {
 });
 };
 
+Hero.prototype.Completed = function (task) {
+   return setCompleted();
+};
+
+
+
+
+
 
 
 module.exports = Hero;
