@@ -6,7 +6,7 @@ describe("Task Tests", function(){
   let task;
 
   beforeEach("Setup", function(){
-    task = new Task("Something", 4, 3, 100);
+    task = new Task("Something", 4, 3, 100, false);
   })
 
   it("should have a description", function(){
