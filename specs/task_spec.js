@@ -6,7 +6,7 @@ describe("Task Tests", function(){
   let task;
 
   beforeEach("Setup", function(){
-    task = new Task("Something", "easy", 3, 100, false);
+    task = new Task("Something", 4, 3, 100);
   })
 
   it("should have a description", function(){
@@ -14,7 +14,7 @@ describe("Task Tests", function(){
   })
 
   it("should have a difficulty level", function(){
-    assert.strictEqual(task.difficultyLevel, "easy");
+    assert.strictEqual(task.difficultyLevel, 4);
   })
 
   it("should have an urgency level", function(){
@@ -28,5 +28,5 @@ describe("Task Tests", function(){
   it("should be able to be completed", function(){
     assert.strictEqual(task.completed, false);
   })
-  
+
 })

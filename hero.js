@@ -22,6 +22,14 @@ Hero.prototype.eat = function (food) {
   return this.health += food.replenishmentValue;
 };
 
+Hero.prototype.addTask = function (task) {
+  this.tasks.push(task);
+};
+
+Hero.prototype.numberOfTasks = function () {
+  return this.tasks.length;
+};
+
 
 
 module.exports = Hero;
