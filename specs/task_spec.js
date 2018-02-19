@@ -4,9 +4,11 @@ var Task = require("../task.js");
 describe("Task Tests", function(){
 
   let task;
+  let task1;
 
   beforeEach("Setup", function(){
-    task = new Task("Something", 4, 3, 100, false);
+    task = new Task("Something", 4, 3, 100);
+    task1 = new Task("Something Else", 4, 3, 100);
   })
 
   it("should have a description", function(){
@@ -28,5 +30,11 @@ describe("Task Tests", function(){
   it("should be able to be completed", function(){
     assert.strictEqual(task.completed, false);
   })
+
+  it("should be set to complete", function(){
+    task.setCompleted()
+    assert.strictEqual(task.completed, true);
+  })
+
 
 })
